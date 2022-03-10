@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>Pratik Mohare</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 200px */
+.w3-sidebar {width: 200px;background:#006633;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (200px) */
+#main {margin-left: 200px}
+.w3-theme-green {color:#fff !important;background-color:#006633 !important}
+.w3-theme-yellow {color:#fff !important;background-color:#FFCC33 !important}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 800px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="images/profile.jpg" alt='Pratik Mohare' style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-yellow">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#profile" class="w3-bar-item w3-button w3-padding-large w3-hover-yellow">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>PROFILE</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-yellow">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#profile" class="w3-bar-item w3-button" style="width:25% !important">PROFILE</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-small" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-16 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo w3-text-yellow"><b>Pratik Mohare</b></h1>
+    <h4 class="w3-text-yellow">Computer Science Grad student</h4>
+    <p>Logical problem solving has always appealed to me which explains my interests in programming and computing in general.
+      <br>My decision to study computer science and pursue a Masters degree was therefore a simple one.</p>
+  </header>
+  <hr style="width:70%; margin:auto; border-color:#006633;">
+  <!-- Profile Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="profile">
+    <h2 class="w3-text-yellow">Profile</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-half">
+      <h3 class="w3-padding-16 w3-text-white">Work Experience</h3>
+      <h5 class="w3-text-white"><b>Senior Systems Engineer, Infosys Ltd</b></h5>
+      <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2017 - Dec 2019</h6>
+      <br>
+      <h5 class="w3-text-white"><b>Project Intern, Solar Edutech</b></h5>
+      <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2016 - Jul 2016</h6>  
+    </div>
+    <div class="w3-rest">
+      <h3 class="w3-padding-16 w3-text-white">Education</h3>
+      <h5 class="w3-text-white"><b>Masters in Computer Science, George Mason University</b></h5>
+      <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring 2021 - Present</h6>
+      <h6 class="w3-text-white">Courses: CS580, CS583, CS584, CS657, CS551, SWE642</h6>
+      <br>
+      <h5 class="w3-text-white"><b>Bachelors of Engineering, Mumbai University</b></h5>
+      <h6 class="w3-text-white"><b>Computer Engineering</b></h6>
+      <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2012 - May 2016</h6>
+    </div>
+    <h3 class="w3-padding-16 w3-text-white">My Skills</h3>
+    <p class="w3-wide w3-text-white">Data Analytics</p>
+    <div class="w3-dark-grey">
+      <div class="w3-white" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide w3-text-white">Software Development</p>
+    <div class="w3-dark-grey">
+      <div class="w3-white" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide w3-text-white">Algorithms & Data Structures</p>
+    <div class="w3-dark-grey">
+      <div class="w3-white" style="height:28px;width:80%"></div>
+    </div><br>
+    <br><br>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" onclick="window.location.href='Pratik Mohare Resume.pdf'">
+      <i class="fa fa-download"></i> Download Resume </a>
+    </button>
+  <!-- End Profile Section -->
+  </div>
+
+  <div class="w3-padding-small w3-center">
+    <!-- Assignment part 2-->
+    <h4><a href="course.html" target="_blank">Computer Science Department Information</a></h4>
+    <h4><a href="feedback.html" target="_blank">Student Survey Form</a></h4>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-white" id="contact">
+    <h2 class="w3-text-yellow">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Fairfax, VA 22030</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 571 340 8641</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: pmohare@gmu.edu</p>
+    </div>
+  <!-- End Contact Section -->
+  </div>
+  <!--Linkedin footer-->
+  <footer class="w3-container w3-center w3-margin-top w3-theme-green">
+    <p>Find me on linkedin.</p>
+    <p><a href="https://www.linkedin.com/in/pratik-mohare" target="_blank">Pratik Mohare</a></p>
+  </footer>
+  <!-- Footer bar GMU logo-->
+  <footer class="w3-container w3-padding-16 w3-theme-yellow">  
+    <a href="https://cs.gmu.edu/"><img src="images/logo.png" alt='GMU logo' class='w3-right' style="width:20%;"></a>
+  </footer>
+</body>
+</html>

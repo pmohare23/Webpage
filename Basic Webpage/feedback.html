@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Student Survey</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  .w3-theme-green {color:#fff !important;background-color:#006633 !important}
+  .w3-theme-yellow {color:#fff !important;background-color:#FFCC33 !important}
+</style>
+<body class="w3-light-gray">
+  <!-- Header -->
+  <header class=" w3-container w3-padding-32 w3-center" float="left" style="padding-top:40px; border: #006633; border-width:5px; border-style:solid;box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 25px;">
+    <img src="images/logo.png" alt='GMU logo' style="width:20%">
+  </header>
+  <div style="padding-left: 5%";>
+    <a href="course.html" target="_blank"><h3>Back to Department of Computer Science</h3></a>
+    <h1>Student Survey Form</h1>
+    <br>
+    <h4>Please complete the survey</h4>
+    <div>
+      <form autocomplete="on" action="course.html" method="post">
+        <table id="surveyForm" class="w3-table">
+          <tbody>
+            <tr>
+              <td>First Name *</td>
+              <td><input id="First_Name" maxlength="30" name="First_Name" type="text" placeholder="John" autofocus required/></td>
+            </tr>
+            <tr>
+              <td>Last Name *</td>
+              <td><input id="LName" maxlength="30" name="LName" type="text" placeholder="Doe" required/></td>
+            </tr>
+            <tr>
+              <td>GMU ID (if current Mason Student)</td>
+              <td><input id="GMUID" maxlength="9" name="GMUID" type="text" placeholder="GXXXXXXXX"/></td>
+            </tr>
+            <tr>
+              <td>Street Address *</td>
+              <td><input id="Street" maxlength="100" name="Street" type="text" required/></td>
+            </tr>
+            <tr>
+              <td>City *</td>
+              <td><input id="City" maxlength="20" name="City" type="text" required/></td>
+            </tr>
+            <tr>
+              <td>State *</td>
+              <td><input id="State" maxlength="50" name="State" type="text" required/></td>
+            </tr>
+            <tr>
+              <td>Zip Code *</td>
+              <td><input id="Zip" maxlength="5" name="Zip" type="number" required placeholder="12345"/></td>
+            </tr>
+            <tr>
+              <td>Phone Number</td>
+              <td><input id="phone" maxlength="10" name="phone" type="number" placeholder="xxxxxxxxxx"/></td>
+            </tr>
+            <tr>
+              <td>Email *</td>
+              <td><input id="Email" maxlength="50" name="Email" type="email" placeholder="xyz@gmu.edu" required/></td>
+            </tr>
+            <tr>
+              <td>URL</td>
+              <td><input id="URL" maxlength="50" name="URL" type="url"></td>
+            </tr>
+            <tr>
+              <td>Date of survey *</td>
+              <td><input id="Date" maxlength="10" name="Date" type="date" placeholder="mm/dd/yyyy" required/></td>
+            </tr>
+            <tr>
+              <td><label>What did you like the most about George Mason University?</label></td>
+              <td>
+                <label><input name="likes" type="checkbox" value="0"/> Students</label><br>
+                <label><input name="likes" type="checkbox" value="1"/> Atmosphere</label><br>
+                <label><input name="likes" type="checkbox" value="2"/> Campus</label><br>
+                <label><input name="likes" type="checkbox" value="3"/> Dorm Rooms</label><br>
+                <label><input name="likes" type="checkbox" value="4"/> Location</label><br>
+                <label><input name="likes" type="checkbox" value="5"/> Sports</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label>What interested you the most at George Mason University?</label></td>
+              <td><input name="interest" type="radio" value="0" required />Friends</label><br>
+                <label><input name="interest" type="radio" value="1" required />Television</label><br>
+                <label><input name="interest" type="radio" value="2" required />Internet</label><br>
+                <label><input name="interest" type="radio" value="3" required />Other</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label>How likey would you recommend GMU: *</label></td>
+              <td><input list="recd" name="recd" required placeholder="--select--" list="rec"/> 
+                <datalist id="rec">
+                  <option value="Very Likely"></option>
+                  <option value="Likely"></option>
+                  <option value="Unlikely"></option>
+                </datalist>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Date of High School Graduation *</label></td>
+              <td><input id="graduation_month" type="text" required placeholder="month" list="months"/>
+                <datalist id="months">
+                  <option value="January"></option>
+                  <option value="February"></option>
+                  <option value="March"></option>
+                  <option value="April"></option>
+                  <option value="May"></option>
+                  <option value="June"></option>
+                  <option value="July"></option>
+                  <option value="August"></option>
+                  <option value="September"></option>
+                  <option value="October"></option>
+                  <option value="November"></option>
+                  <option value="December"></option>
+                </datalist>
+                <input id="graduation_year" type="number" min="1970" max="2050" required placeholder="yyyy"/>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Your Comments or Suggestions:</label></td>
+              <td><textarea name="Comments" rows="2"></textarea></td>
+            </tr>
+          </tbody>
+        </table>  
+        <br>
+        <!--Buttons-->
+        <div class="w3-container">
+          <input type="submit" class="w3-button w3-green" value="Submit" /> 
+          <input type="reset" class="w3-button w3-green" value="Reset" />
+        </div>
+      </form>
+      <br>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-theme-yellow">  
+    <a href="https://cs.gmu.edu/"><img src="images/logo.png" alt='GMU logo' class='w3-right' style="width:20%;"></a>
+  </footer>
+</body>
+</html>
