@@ -1,0 +1,21 @@
+create table Students( 
+ firstname varchar(25),
+ lastname varchar(25),
+ studentID varchar(25),
+ street varchar(50),
+ city varchar(25),
+ state varchar(25),
+ zip varchar(25),
+ phone varchar(25),
+ email varchar(25),
+ url varchar(50),
+ dsurvey varchar(25),
+ likes varchar(100),
+ interest varchar(35),
+ recommend varchar(25),
+ gradmonth varchar(25),
+ gradyear varchar(25),
+ comments varchar(100),
+ data varchar(50)
+);
+ 
