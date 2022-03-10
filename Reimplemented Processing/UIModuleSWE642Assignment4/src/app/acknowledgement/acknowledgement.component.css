@@ -1,0 +1,70 @@
+/* Samriddhi Dashora */
+
+.footerStyle a {
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+h5{
+    color: #006633;
+}
+
+h1{
+    color: #006633;
+    border-style: solid;
+    border-width: medium;
+    border-width: 5px;
+    box-shadow: 5px 10px black;
+    background: #FFCC33;
+    font-size: xx-large;
+}
+
+body {
+    background-color: rgb(248, 247, 247);
+}
+
+#headerDiv {
+    background: #006633;
+}
+
+#courses {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+#courses td, #courses th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#courses tr:nth-child(even){background-color: #f2f2f2;}
+  
+#courses tr:hover {background-color: #ddd;}
+  
+#courses th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #006633;
+    color: white;
+}
+
+.required:after {
+    content:" *";
+    color: red;
+}
+
+#tabs-1{font-size: 14px;}  
+         
+.ui-widget-header {  
+    background:#626664;  
+    font-weight: bold;  
+    width: 100%;
+}
+
+.errorMessageStyle{
+    margin-top: 25px;
+}

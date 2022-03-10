@@ -1,0 +1,57 @@
+<!-- Samriddhi Dashora -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+<div class="w3-content" style="max-width: 1400px">
+	<header class=" w3-container w3-padding-32 w3-center" float="left" style="padding-top:40px; border: #006633; border-width:5px; border-style:solid;box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 25px;">
+		<img src="assets/images/logo.png" alt='GMU logo' style="width:25%">
+	</header>
+	<div class="w3-row">
+		<!-- If mean is more than 90 then showing congratulation message OR Confirmation after form filling -->
+		<div class="w3-card-4 w3-margin w3-white">
+			<div class="w3-container">
+				<h3>
+					<div  *ngFor='let record of recordList | slice:0:1'>
+					<b *ngIf = "record.mean >= 90">
+						Heartly Congratulations!! You have won a movie ticket</b>							
+					</div>
+				</h3>
+				<h5>Thank you filling the survey form.</h5>
+			</div>			
+			<button type="button" class="btn btn-default" (click)="onCancel()" style="margin:5px;">New Form</button>
+			<br>
+		</div>
+		<br>
+		<!-- To display mean and standard deviation of recent data values -->
+		<div class="w3-card w3-margin">
+			<div class="w3-container w3-padding">
+				<h4>Information</h4>
+			</div>
+			<ul class="w3-ul w3-hoverable w3-white" *ngFor='let record of recordList | slice:0:1'>
+				<li class="w3-padding-16"><span class="w3-large"><strong>Mean: 
+					</strong> {{record.mean}}</span><br>
+				<br>
+				<br> <span class="w3-large"><strong>Standard
+							Deviation: </strong>{{record.std}}</span><br></li>
+			</ul>
+		</div>		
+		<!-- To display list of students in database -->
+		<div class="w3-card w3-margin w3-margin-top">
+			<div class="w3-container w3-white">
+				<h4>
+					<b>List of Students</b>
+				</h4>				
+				<p>Click on Stundent ID to preview information.</p>				
+				<ul *ngFor = "let record of recordList">
+					<li><a href="javascript:void(0);" (click)="loadReadOnlyFormm(record)">{{record.studentID}}</a> </li>
+				</ul>			
+			</div>
+		</div>
+		<br>
+		<br>
+	</div>
+	<footer>  
+		<a href="https://cs.gmu.edu/"><img src="assets/images/logo.png" alt='GMU logo' class='w3-right' style="width:25%;"></a>
+	  </footer>
+</div>
